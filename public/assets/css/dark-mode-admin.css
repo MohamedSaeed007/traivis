@@ -1,0 +1,92 @@
+[data-theme="dark"] {
+  background-color: rgba(0, 0, 0, 0.9) !important;
+    color: #eee;
+  }
+[data-theme="dark"] #content {
+  background-color: rgba(0, 0, 0, 0.9) !important;
+}
+[data-theme="dark"] main{
+  background-color: rgba(0, 0, 0, 0.9) !important;
+}
+
+[data-theme="dark"] .page-header {
+  background-color: rgba(0, 0, 0, 0.9) !important;
+}
+[data-theme="dark"] nav {
+  background-color: rgba(0, 0, 0, 0.9) !important;
+}
+
+[data-theme="dark"] .bg-white {
+  background-color: rgba(54, 52, 52, 0.8) !important;
+}
+
+[data-theme="dark"] .panel {
+  background-color: rgba(54, 52, 52, 0.8) !important;
+}
+[data-theme="dark"] .dropdown-menu {
+  background-color: rgba(54, 52, 52, 0.8) !important;
+}
+[data-theme="dark"] .table-striped tbody tr:nth-of-type(odd){
+  background-color: rgb(65, 63, 63) !important;
+}
+[data-theme="dark"] .bg-category-step0 {
+  background-color: rgba(54, 52, 52, 0.8) !important;
+}
+[data-theme="dark"] .bg-category-step1 {
+  background-color: rgb(92, 91, 91) !important;
+}
+[data-theme="dark"] .active {
+   color: #0045ed !important;
+}
+[data-theme="dark"] .write_msg {
+  color: #eee !important;
+}
+[data-theme="dark"] .time_date {
+  color: #eee !important;
+}
+[data-theme="dark"] .inbox_people {
+  background-color: rgba(54, 52, 52, 0.8) !important;
+}
+[data-theme="dark"] .chat_list {
+  background-color: rgba(54, 52, 52, 0.8) !important;
+}
+[data-theme="dark"] th {
+  color: #eee !important;
+}
+[data-theme="dark"] td {
+  color: #eee !important;
+}
+[data-theme="dark"] small {
+  color: #eee !important;
+}
+[data-theme="dark"] .dashboard-top-nav .dropdown-item{
+  color: #eee !important;
+}
+[data-theme="dark"] .dashboard-top-nav .dropdown-item:hover{
+  color: #0045ed !important;
+}
+[data-theme="dark"] a {
+  color: #eee !important;
+}
+[data-theme="dark"] a:hover {
+  color: #0045ed !important;
+}
+[data-theme="dark"] h1 {
+  color: #eee !important;
+}
+[data-theme="dark"] h3 {
+  color: #eee !important;
+}
+[data-theme="dark"] h4 {
+  color: #eee !important;
+}
+[data-theme="dark"] h5 {
+  color: #eee !important;
+}
+[data-theme="dark"] h6 {
+  color: #eee !important;
+}
+[data-theme="dark"] label {
+  color: #eee !important;
+  
+}

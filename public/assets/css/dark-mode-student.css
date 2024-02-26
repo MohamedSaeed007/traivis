@@ -1,0 +1,86 @@
+[data-theme="dark"] #content-wrapper {
+  background-color: #191919 !important;
+}
+[data-theme="dark"] .navbar {
+  background-color: #191919 !important;
+}
+[data-theme="dark"] .page-content {
+  background-color: #191919 !important;
+}
+[data-theme="dark"] .card {
+  background-color: rgba(54, 52, 52, 0.8) !important;
+}
+[data-theme="dark"] .panel-light {
+  background-color: rgba(54, 52, 52, 0.8) !important;
+}
+[data-theme="dark"] .widget-sm {
+  background-color: rgba(54, 52, 52, 0.8) !important;
+}
+[data-theme="dark"] .bg-white {
+  background-color: rgba(54, 52, 52, 0.8) !important;
+}
+[data-theme="dark"] .dropdown-menu {
+  background-color: rgba(54, 52, 52, 0.8) !important;
+}
+[data-theme="dark"] table.fc-header {
+  background-color: rgb(65, 63, 63) !important;
+}
+[data-theme="dark"] tr {
+  background-color: rgba(54, 52, 52, 0.8) !important;
+}
+
+[data-theme="dark"] .dropdown-item i {
+  color: #0045ed !important;
+}
+[data-theme="dark"] h1 {
+  color: #eee !important;
+}
+[data-theme="dark"] h2 {
+  color: #eee !important;
+}
+[data-theme="dark"] h4 {
+  color: #eee !important;
+}
+[data-theme="dark"] h5 {
+  color: #eee !important;
+}
+[data-theme="dark"] h6 {
+  color: #eee !important;
+}
+[data-theme="dark"] a {
+  color: #eee !important;
+}
+[data-theme="dark"] .dropdown-item:hover {
+  color: #0045ed !important;
+}
+[data-theme="dark"] label {
+  color: #eee !important;
+}
+[data-theme="dark"] p {
+  color: #eee !important;
+}
+[data-theme="dark"] span {
+  color: rgb(189, 184, 184) !important;
+}
+[data-theme="dark"] .upload-btn-wrapper {
+  background-color: rgba(54, 52, 52, 0.8) !important;
+}
+
+[data-theme="dark"] th {
+  color: #eee !important;
+}
+[data-theme="dark"] td {
+  color: #eee !important;
+}
+[data-theme="dark"] .write_msg {
+  color: #eee !important;
+}
+[data-theme="dark"] .time_date {
+  color: #eee !important;
+}
+[data-theme="dark"] .inbox_people {
+  background-color: rgba(54, 52, 52, 0.8) !important;
+}
+[data-theme="dark"] .chat_list {
+  background-color: rgba(54, 52, 52, 0.8) !important;
+}

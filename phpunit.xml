@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="./vendor/phpunit/phpunit/phpunit.xsd"
+         bootstrap="vendor/autoload.php"
+         colors="true">
+    <testsuites>
+        <testsuite name="Unit">
+            <directory suffix="Test.php">./tests/Unit</directory>
+            <exclude>./tests/Unit/ExampleTest.php</exclude>
+            <exclude>./tests/CreatesApplication.php</exclude>
+            <exclude>./tests/TestCase.php</exclude>
+        </testsuite>
+        <testsuite name="Feature">
+            <directory suffix="Test.php">./tests/Feature</directory>
+            <exclude>./tests/Feature/Livewire/CommentsTest.php</exclude>
+            <exclude>./tests/Feature/Livewire/CommentTest.php</exclude>
+            <exclude>./tests/Feature/ExampleTest.php</exclude>
+        </testsuite>
+    </testsuites>
+    <filter>
+        <whitelist processUncoveredFilesFromWhitelist="true">
+            <directory suffix=".php">./app</directory>
+        </whitelist>
+    </filter>
+    <php>
+        <server name="APP_ENV" value="testing"/>
+        <server name="BCRYPT_ROUNDS" value="4"/>
+        <server name="CACHE_DRIVER" value="array"/>
+        <server name="DB_CONNECTION" value="mysql"/>
+        <server name="DB_HOST" value="host.docker.internal"/>
+        <server name="DB_PORT" value="33060"/>
+        <server name="DB_DATABASE" value="traivis"/>
+        <server name="DB_USERNAME" value="root"/>
+        <server name="DB_PASSWORD" value="root"/>
+        <server name="MAIL_MAILER" value="array"/>
+        <server name="QUEUE_CONNECTION" value="sync"/>
+        <server name="SESSION_DRIVER" value="array"/>
+    </php>
+</phpunit>

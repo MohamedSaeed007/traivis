@@ -1,0 +1,4 @@
+@props([
+'videoSrc',
+'hint'
+])

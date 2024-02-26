@@ -1,0 +1,28 @@
+{
+  "preset": "laravel",
+  "rules": {
+    "no_unused_imports": false
+  },
+  "exclude": [
+    "bootstrap",
+    "config",
+    "database",
+    "landing",
+    "new",
+    "public",
+    "resources",
+    "routes",
+    "storage",
+    "tests",
+    "traivis-html",
+    "app/Module",
+    "app/Plugins",
+    "app/VideoStream",
+    "app/Exceptions",
+    "app/Helpers",
+    "app/ID3",
+    "app/Libraries"
+  ],
+  "notPath": [
+  ]
+}

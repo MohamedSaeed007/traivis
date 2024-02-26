@@ -1,0 +1,131 @@
+[data-theme="dark"] {
+  background-color: rgba(0, 0, 0, 0.8) !important;
+    /* color: #eee; */
+  }
+  
+  [data-theme="dark"] .bg-white{
+    background-color: rgba(0,0,0, 0.8) !important;
+  }
+  [data-theme="dark"] .page-content {
+    background-color: rgba(0,0,0, 0.8) !important;
+  }
+  [data-theme="dark"] b, strong {
+    color: #0045ed!important;
+  }
+  [data-theme="dark"] .widget-sm {
+    background-color: rgba(54, 52, 52, 0.8) !important;
+  }
+  [data-theme="dark"] .widget-sm:hover {
+    background-color: #0045ed !important;
+  }
+  [data-theme="dark"] .page-header {
+    background-color: rgba(54, 52, 52, 0.8) !important;
+  }
+  [data-theme="dark"] .container  {
+    background-color: rgba(54, 52, 52, 0.8) !important;
+  }
+
+  [data-theme="dark"] .inbox_people {
+    background-color: rgba(54, 52, 52, 0.8) !important;
+  }
+  [data-theme="dark"] .chat_list {
+    background-color: rgba(54, 52, 52, 0.8) !important;
+  }
+  [data-theme="dark"] .panel-header {
+    background-color: rgba(54, 52, 52, 0.8) !important;
+  }
+  [data-theme="dark"] .card {
+    background-color: rgba(54, 52, 52, 0.8) !important;
+  }
+  [data-theme="dark"] .panel {
+    background-color: rgba(54, 52, 52, 0.8) !important;
+  }
+  [data-theme="dark"] .panel-light {
+    background-color: rgba(54, 52, 52, 0.8) !important;
+  }
+  [data-theme="dark"] tr {
+    background-color: rgba(54, 52, 52, 0.8) !important;
+  }
+  [data-theme="dark"] .dropdown-menu {
+    background-color: #111 !important;
+    border-bottom: 1px dashed #e5e5e5 !important;
+  }
+  [data-theme="dark"] b {
+    color: #eee !important;
+  }
+  [data-theme="dark"] .avatar {
+    color: #111 !important;
+  }
+  [data-theme="dark"] .text-overflow {
+    color: #eee !important;
+  }
+  [data-theme="dark"] a {
+    color: #eee !important;
+  }
+  [data-theme="dark"] .write_msg {
+    color: #eee !important;
+  }
+  [data-theme="dark"] .time_date {
+    color: #eee !important;
+  }
+  [data-theme="dark"] a:hover {
+    color: #0045ed !important;
+  }
+  [data-theme="dark"] .fa:hover {
+    color: #0045ed !important;
+  }
+  [data-theme="dark"] .fas:hover {
+    color: #0045ed !important;
+  }
+
+  [data-theme="dark"] .dataTables_wrapper .dataTables_paginate .paginate_button.disabled, .dataTables_wrapper .dataTables_paginate .paginate_button.disabled:hover, .dataTables_wrapper .dataTables_paginate .paginate_button.disabled:active {
+    color: #eee !important;
+    
+  }
+  [data-theme="dark"] .dataTables_info {
+    color: #eee !important;
+    
+  }
+  [data-theme="dark"] g {
+    color: #eee !important;
+    
+  }
+  [data-theme="dark"] label {
+    color: #eee !important;
+    
+  }
+  [data-theme="dark"] th {
+    color: #eee !important;
+    
+  }
+  [data-theme="dark"] td {
+    color: #eee !important;
+  }
+  [data-theme="dark"] i {
+    color: #eee !important;
+  }
+  [data-theme="dark"] p {
+    color: #eee !important;
+  }
+  [data-theme="dark"] h1 {
+    color: #eee !important;
+  }
+  [data-theme="dark"] h2 {
+    color: #eee !important;
+  }
+  [data-theme="dark"] h3 {
+    color: #eee !important;
+  }
+  [data-theme="dark"] h4 {
+    color: #eee !important;
+  }
+  [data-theme="dark"] h5 {
+    color: #eee !important;
+  }
+  [data-theme="dark"] h6 {
+    color: #eee !important;
+  }
+  /* [data-theme="dark"] #lineChartTest {
+    color: #eee !important;
+  } */
+ 

@@ -1,0 +1,56 @@
+[data-theme="dark"] {
+  background-color: rgba(0, 0, 0, 0.8) !important;
+}
+[data-theme="dark"] .lecture-container {
+  background-color: rgba(54, 52, 52, 0.8) !important;
+}
+[data-theme="dark"] .bg-light-sky {
+    background-color: grey !important;
+  }
+[data-theme="dark"] .lecture-sidebar {
+  background-color: #000 !important;
+}
+[data-theme="dark"] .section-header {
+  background-color: rgba(0, 0, 0, 0.9) !important;
+}
+[data-theme="dark"] .course-section-body {
+  background-color: rgba(0, 0, 0, 0.9) !important;
+}
+[data-theme="dark"] .assignment-header-info {
+  background-color: rgba(54, 52, 52, 0.8) !important;
+  border: 2px solid #eee;
+}
+[data-theme="dark"] .sidebar-section-item .section-item-title a {
+  box-shadow: 0px 3px 3px 1px rgb(0 0 0 / 20%);
+  border-radius: 20px;
+  color: #0045ed !important;
+  background-color: rgba(54, 52, 52, 0.8);
+}
+
+[data-theme="dark"] .sidebar-section-item.active .section-item-title a:hover {
+  color: #0045ed !important;
+}
+[data-theme="dark"] hr {
+  border-top: 1px solid #eee;
+}
+[data-theme="dark"] h2 {
+  color: #eee !important;
+}
+[data-theme="dark"] h4 {
+  color: #eee !important;
+}
+[data-theme="dark"] strong {
+  color: #eee !important;
+}
+[data-theme="dark"] p {
+  color: #eee !important;
+}
+[data-theme="dark"] .active {
+  box-shadow: 0px 3px 3px 1px rgb(0 0 0 / 20%);
+}
+[data-theme="dark"] .progress {
+  box-shadow: 0 3px 3px -5px #eee, 0 2px 4px #eee;
+}
+[data-theme="dark"] a {
+  color: #eee !important;
+}

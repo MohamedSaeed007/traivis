@@ -1,0 +1,137 @@
+<!DOCTYPE html> 
+<html> 
+
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>Traivis</title>
+        <style>
+        .modal-header, h4, .close {
+          background-color: #0045ed;
+          color:white !important;
+          text-align: center;
+          font-size: 30px;
+        }
+        .modal-footer {
+          background-color: #f9f9f9;
+        }
+
+
+        /* #video-bg {
+  position: relative;
+  width: auto;
+  min-width: 100%;
+  height: auto;
+  background: transparent url(video-bg.jpg) no-repeat;
+  background-size: cover;
+}
+video {
+  display: block;
+}
+.video-container {
+  width: 100%;
+  max-height: 700px;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: -100;
+} */
+
+
+        </style>
+      </head>
+
+
+<body> 
+<div class="video-container">
+    <a id="myBtn">
+<video width="100%" height="auto" playsinline autoplay muted loop id="video-bg">
+  <source src="traivis.mp4" type="video/mp4">
+  <source src="traivis.mp4" type="video/ogg">
+  Your browser does not support HTML video.
+</video>
+</a>
+</div>
+
+
+
+
+<div class="container">
+    
+  
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" role="dialog">
+      <div class="modal-dialog">
+      
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header" style="padding:35px 50px;">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4><i class="fa fa-sign-in twhite"></i> Register</h4>
+          </div>
+          <div class="modal-body" style="padding:40px 50px;">
+            <form role="form">
+                <div class="row">
+              <div class="form-group col-md-6">
+                <label for="usrname"><i class="fa fa-user" aria-hidden="true"></i> Name</label>
+                <input type="text" class="form-control" id="usrname" placeholder="Enter Name">
+              </div>
+              <div class="form-group col-md-6">
+                <label for="psw"><i class="fa fa-envelope" aria-hidden="true"></i> Email</label>
+                <input type="text" class="form-control" id="psw" placeholder="Enter Email">
+              </div>
+
+              <div class="form-group col-md-12">
+                <label for="psw"><i class="fa fa-building" aria-hidden="true"></i> Address</label>
+                <textarea rows="2" placeholder="Address" class="form-control"></textarea>
+              </div>
+
+              <div class="form-group col-md-12">
+                <label for="psw"><i class="fa fa-university" aria-hidden="true"></i> Institution Name</label>
+                <input type="text" class="form-control" id="psw" placeholder="Enter Institution Name">
+              </div>
+
+              <div class="form-group col-md-6">
+                <label for="psw"><i class="fa fa-globe" aria-hidden="true"></i> Web</label>
+                <input type="text" class="form-control" id="psw" placeholder="Enter Web Address">
+              </div>
+
+              <div class="form-group col-md-6">
+                <label for="psw"><i class="fa fa-map-marker" aria-hidden="true"></i> Location</label>
+                <input type="text" class="form-control" id="psw" placeholder="Enter Location">
+              </div>
+
+
+
+              <!-- <div class="checkbox">
+                <label><input type="checkbox" value="" checked>Remember me</label>
+              </div> -->
+              <div class="form-group col-md-12" style="margin-top: 20px;">
+                <button type="submit" class="btn btn-danger btn-block"><i class="fa fa-paper-plane" aria-hidden="true"></i> Submit</button>
+            </div>
+        </div>
+            </form>
+          </div>
+      
+        </div>
+        
+      </div>
+    </div> 
+  </div>
+   
+  <script>
+  $(document).ready(function(){
+    $("#myBtn").click(function(){
+      $("#myModal").modal();
+    });
+  });
+  </script>
+
+
+</body> 
+</html>
+

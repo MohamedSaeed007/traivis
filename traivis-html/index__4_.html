@@ -1,0 +1,333 @@
+<!DOCTYPE html> 
+<html> 
+
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;600;700;800&display=swap" rel="stylesheet">
+        
+        <title>Traivis</title>
+        <style>
+        .modal-header, h4, .close {
+          background-color: #0045ed;
+          color:white !important;
+          text-align: center;
+          font-size: 30px;
+        }
+        .modal-footer {
+          background-color: #f9f9f9;
+        }
+
+        .btn-danger {
+    color: #fff;
+    background-color: #0045ed;
+    border-color: #0045ed;
+    padding: 10px 50px 10px 50px;
+    border-radius: 30px;
+}
+
+
+/* Reset */
+* {
+  margin: 0;
+  paddding: 0;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.wrapper .wrapper__video {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+
+h1 {
+  text-align: center;
+  color: #fff;
+  position: absolute;
+  top: 140px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: 3;
+  max-width: 400px;
+  width: 100%;
+  height: 50px;
+}
+
+.overlay {
+  width: 60%;
+  height: 50vh;
+  margin-left: 20%;
+  border-radius: 20px;
+  position: absolute;
+  top: 30%;
+  left: 0;
+  background-image: linear-gradient(45deg, rgba(0,0,0,.3) 50%, rgba(0,0,0,.6) 50%);
+  background-size: 3px 3px;
+  z-index: 2;
+}
+
+p {
+  text-align: center;
+  font-size: 60px;
+  margin-top: 0px;
+  /* position: absolute; */
+  /* top: -40px;
+  bottom: 0; */
+  left: 0;
+  right: 0;
+  margin: auto;
+  color: #fff;
+  z-index: 3;
+  max-width: 800px;
+  width: 100%;
+  height: 50px;
+  text-transform: uppercase;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.navbar {
+  position: absolute;
+    min-height: 50px;
+    margin-bottom: 0px;
+    top: 0px;
+    padding: 25px 20px 25px 20px;
+    border: 1px solid transparent;
+}
+
+.navbar-inverse {
+    background-color: #0000003b;
+    border-color: transparent;
+}
+
+@media (max-width: 767px) {
+
+
+  .overlay {
+  width: 100%;
+  height: 50vh;
+  margin-left:0%;
+  border-radius: 20px;
+  position: absolute;
+  top: 30%;
+  left: 0;
+  background-image: linear-gradient(45deg, rgba(0,0,0,.3) 50%, rgba(0,0,0,.6) 50%);
+  background-size: 3px 3px;
+  z-index: 2;
+}
+
+p {
+  text-align: center;
+  font-size: 35px;
+  margin-top: 0px;
+  position: absolute;
+  top: -40px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  color: #fff;
+  z-index: 3;
+  max-width: 800px;
+  width: 100%;
+  height: 50px;
+  text-transform: uppercase;
+}
+
+.nav {
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    text-align: center;
+}
+
+.wrapper .wrapper__video {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+    background: #0051ab;
+}
+
+.navbar-inverse {
+    background-color: #1e1a1aba;
+    border-color: transparent;
+    margin-top: 225px;
+}
+
+
+}
+        </style>
+      </head>
+
+
+<body> 
+
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#"><p id="demo"></p></a>
+      </div>
+      <ul class="nav navbar-nav">
+        
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>  <button type="button" id="myBtn" class="btn btn-danger">Register</button></li>
+       
+      </ul>
+    </div>
+  </nav>
+
+  <div class="wrapper hidden-xs">
+    <video autoplay loop muted class="wrapper__video">
+      <source src="traivis.mp4">
+    </video>
+  </div>
+
+  <div class="wrapper visible-xs">
+    <video autoplay loop muted class="wrapper__video">
+      <source src="mobile.mp4">
+    </video>
+  </div>
+
+  <!-- <div class="overlay">
+  </div>
+
+  <p id="demo"></p>
+
+  <h1 >
+    
+    <button type="button" id="myBtn" class="btn btn-danger">Register</button>
+  </h1> -->
+
+
+<!-- <div class="video-container">
+    <a id="myBtn">
+<video width="100%" height="auto" playsinline autoplay muted loop id="video-bg">
+  <source src="traivis.mp4" type="video/mp4">
+  <source src="traivis.mp4" type="video/ogg">
+  Your browser does not support HTML video.
+</video>
+</a>
+</div> -->
+
+
+
+
+<div class="container">
+    
+  
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" role="dialog">
+      <div class="modal-dialog">
+      
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header" style="padding:35px 50px;">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4><i class="fa fa-sign-in twhite"></i> Register</h4>
+          </div>
+          <div class="modal-body" style="padding:40px 50px;">
+            <form role="form">
+                <div class="row">
+              <div class="form-group col-md-6">
+                <label for="usrname"><i class="fa fa-user" aria-hidden="true"></i> Name</label>
+                <input type="text" class="form-control" id="usrname" placeholder="Enter Name">
+              </div>
+              <div class="form-group col-md-6">
+                <label for="psw"><i class="fa fa-envelope" aria-hidden="true"></i> Email</label>
+                <input type="text" class="form-control" id="psw" placeholder="Enter Email">
+              </div>
+
+              <div class="form-group col-md-12">
+                <label for="psw"><i class="fa fa-building" aria-hidden="true"></i> Address</label>
+                <textarea rows="2" placeholder="Address" class="form-control"></textarea>
+              </div>
+
+              <div class="form-group col-md-12">
+                <label for="psw"><i class="fa fa-university" aria-hidden="true"></i> Institution Name</label>
+                <input type="text" class="form-control" id="psw" placeholder="Enter Institution Name">
+              </div>
+
+              <div class="form-group col-md-6">
+                <label for="psw"><i class="fa fa-globe" aria-hidden="true"></i> Web</label>
+                <input type="text" class="form-control" id="psw" placeholder="Enter Web Address">
+              </div>
+
+              <div class="form-group col-md-6">
+                <label for="psw"><i class="fa fa-map-marker" aria-hidden="true"></i> Location</label>
+                <input type="text" class="form-control" id="psw" placeholder="Enter Location">
+              </div>
+
+
+
+              <!-- <div class="checkbox">
+                <label><input type="checkbox" value="" checked>Remember me</label>
+              </div> -->
+              <div class="form-group col-md-12" style="margin-top: 20px;">
+                <button type="submit" class="btn btn-danger btn-block"><i class="fa fa-paper-plane" aria-hidden="true"></i> Submit</button>
+            </div>
+        </div>
+            </form>
+          </div>
+      
+        </div>
+        
+      </div>
+    </div> 
+  </div>
+   
+  <script>
+  $(document).ready(function(){
+    $("#myBtn").click(function(){
+      $("#myModal").modal();
+    });
+  });
+  </script>
+
+<script>
+  // Set the date we're counting down to
+  var countDownDate = new Date("Dec 4, 2021 15:37:25").getTime();
+  
+  // Update the count down every 1 second
+  var x = setInterval(function() {
+  
+    // Get today's date and time
+    var now = new Date().getTime();
+      
+    // Find the distance between now and the count down date
+    var distance = countDownDate - now;
+      
+    // Time calculations for days, hours, minutes and seconds
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+      
+    // Output the result in an element with id="demo"
+    document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+    + minutes + "m " + seconds + "s ";
+      
+    // If the count down is over, write some text 
+    if (distance < 0) {
+      clearInterval(x);
+      document.getElementById("demo").innerHTML = "EXPIRED";
+    }
+  }, 1000);
+  </script>
+
+
+</body> 
+</html>
+

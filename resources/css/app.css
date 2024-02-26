@@ -1,0 +1,168 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*@layer base {*/
+/*    input[type="number"]::-webkit-inner-spin-button,*/
+/*    input[type="number"]::-webkit-outer-spin-button {*/
+/*        -moz-appearance: textfield;*/
+/*        -webkit-appearance: none;*/
+/*        margin: 0;*/
+/*    }*/
+/*}*/
+
+/*!* Chrome, Safari, Edge, Opera *!*/
+/*input::-webkit-outer-spin-button,*/
+/*input::-webkit-inner-spin-button {*/
+/*    -webkit-appearance: none;*/
+/*    margin: 0;*/
+/*}*/
+
+/*!* Firefox *!*/
+/*input[type=number] {*/
+/*    -moz-appearance: textfield;*/
+/*}*/
+
+.faqAnswer pre{
+    @apply my-7 overflow-x-auto rounded-md bg-gray-800 font-mono text-sm font-normal text-gray-200 py-3 px-4;
+}
+.faqAnswer blockquote{
+    @apply mb-6 mt-0 border-l-4 border-gray-200 pl-4 font-medium italic text-gray-900;
+}
+
+.faqAnswer a {
+    @apply font-medium underline;
+}
+.faqAnswer h2 {
+    @apply mb-4 mt-8 font-bold text-2xl;
+}
+.faqAnswer h3 {
+    @apply mb-4 mt-8 font-semibold text-xl;
+}
+.faqAnswer ul{
+    @apply list-disc;
+}
+.faqAnswer ol{
+    @apply 	list-decimal;
+}
+
+#fullCalendar .fc .fc-button-primary {
+    @apply border border-traivis-500 bg-traivis-500 text-white;
+    /*color: #FFFFF;*/
+    /*background-color: #3485FF !important;*/
+    /*border-color: #FFFFFF !important;*/
+}
+
+.number-arrows-off::-webkit-inner-spin-button,
+.number-arrows-off::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+.number-arrows-off {
+    -moz-appearance: textfield !important;
+}
+
+.filepond--credits {
+    display: none;
+}
+
+.filepond--root.filepond--hopper {
+    margin-bottom: 0;
+}
+
+.filepond--root .filepond--panel-root {
+    background-color: transparent;
+}
+
+trix-toolbar .trix-button-group.trix-button-group--file-tools {
+    /*display: none;*/
+}
+
+.blog-create trix-toolbar .trix-button--icon {
+    width: 1.8em;
+}
+
+trix-editor {
+    @apply w-full;
+}
+
+trix-editor h1 {
+    font-size: 1.25rem !important;
+    line-height: 1.25rem !important;
+    @apply leading-5 font-semibold mb-4;
+}
+
+trix-editor a:not(.no-underline) {
+    @apply underline;
+}
+
+trix-editor a:visited {
+    color: green;
+}
+
+trix-editor ul {
+    list-style-type: disc;
+    padding-left: 1rem;
+}
+
+trix-editor ol {
+    list-style-type: decimal;
+    padding-left: 1rem;
+}
+
+trix-editor pre {
+    display: inline-block;
+    width: 100%;
+    vertical-align: top;
+    font-family: monospace;
+    font-size: 1.5em;
+    padding: 0.5em;
+    white-space: pre;
+    background-color: #eee;
+    overflow-x: auto;
+}
+
+trix-editor blockquote {
+    border: 0 solid #ccc;
+    border-left-width: 0.3em;
+    margin-left: 0.3em;
+    padding-left: 0.6em;
+}
+
+[x-cloak] {
+    display: none !important;
+}
+
+* {
+    font-family: cairo;
+}
+
+/*-------scroll bar-------*/
+/* width */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f2f2f2;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #bfbfbf;
+    border-radius: 100px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #9ca3af;
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+    display: none;
+}
